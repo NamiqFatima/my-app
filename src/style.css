@@ -1,0 +1,250 @@
+.service-card:hover{
+    transform: translateY(20px);
+    color: #066cd2;
+
+}
+h1{
+    color: black;
+    width: max-content;
+    font-size: 40px;
+    position: relative;
+    cursor: pointer;
+    margin: 70px auto;
+    font-family: créativité;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left:0;
+    background-color:  black;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+h1:hover::after{
+    transform: scaleX(1);
+}
+i{
+    font-size: 100px;
+} 
+.form-container{
+    background-color:#edede5;
+    width: 600px;
+    margin-left: 350px;
+    margin-right: 50%;
+    border-style: "outset";
+    transition:"0.5s ease-in-out";
+    overFlow: "hidden";
+    border-radius: 10px ;
+    box-shadow: inset -2px 2px 2px #0000FF;
+    flex: 1;
+    padding: 20px;
+}
+.form-control{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    padding: 20px 10px 10px;
+    background: white;
+    outline: none;
+    box-shadow: none;
+    color: #066cd2;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+}
+.text-center{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 10px;
+    width: 500px;
+}
+.prst{
+    
+    margin-left: 10px;
+    width: 1200px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+body, form, input, button {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Arial, sans-serif;
+  }
+  .inputs{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+    width: 100%;
+  }
+  
+  .login-form {
+    width: 360px;
+    margin: 100px auto;
+    padding: 10px;
+    border-radius: 9px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset  2px 2px 3px 1px #066cd2;
+    margin-top: 70px;
+  }
+  .login-form h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .login-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 4px;
+    transition:  0.3s ease-in-out;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition:  0.3s ease-in-out;
+  }
+  .login-form :hover{
+    color:black ;
+    border-radius: 5px;
+    box-shadow: 0 0 5px  #f1f1f3,
+        0 0 25px   #f1f1f3,
+        0 0 50px    #f1f1f3,
+        0 0 100px  #f1f1f3
+  }  
+  .forget{
+    margin-top: 5px;
+    color: #817f7f;
+    font-size: 15px;
+    margin-left: 70px;
+  }
+  .forget a{
+    color: #007bff;
+    font-weight: 300;
+  }
+  .form_icon{
+    height: 10px;
+    width: 340px;
+    font-size: 82px;
+  }
+.input-icon1{
+    width: 6px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.input-icon2{
+  width: 6px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.loading-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 50%;
+  animation: loading-dots 0.6s ease-in-out infinite;
+}
+
+.dot-1 {
+  background-color: blue;
+  animation-delay: 0.1s;
+}
+
+.dot-2 {
+  background-color: green;
+  animation-delay: 0.2s;
+}
+
+.dot-3 {
+  background-color: red;
+  animation-delay: 0.3s;
+}
+.dot-4 {
+  background-color: orange;
+  animation-delay: 0.4s;
+}
+
+
+@keyframes loading-dots {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-15px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity:1 ;
+}
+}
+.avantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.carte {
+  width: 40%;
+  margin-bottom: 20px;
+  background-color:  #f0f0f0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 20px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+  border-radius: 10px;
+}
+
+.carte img {
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.carte h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.carte p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+P{
+  text-align: justify;
+  letter-Spacing:'1px';
+}
